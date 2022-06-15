@@ -40,9 +40,7 @@ function submitData(name, email) {
     .catch(function (error){
         console.log(error.message)
         let message = document.createElement('p')
-        message.textContent = `
-        message: 'Unauthorized Access'
-        `
+        message.textContent = `"Unauthorized Access"`
         document.querySelector('body').appendChild(message)
     })
 };
